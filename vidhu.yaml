@@ -1,0 +1,75 @@
+esphome:
+  name: vidhus-room
+  platform: ESP8266
+  board: nodemcu
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "TP-Link_8046"
+  password: "34627297"
+  use_address: "192.168.0.20"
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Vidhus-Room Fallback Hotspot"
+    password: "8lYnoTfnV0T5"
+
+captive_portal:
+
+switch:
+  - platform: gpio
+    name: "Switch 1"
+    pin: 
+      number: D1
+      inverted: yes
+
+  - platform: gpio
+    name: "Switch 2"
+    pin: 
+      number: D2
+      inverted: yes
+ 
+  - platform: gpio
+    name: "switch 3"
+    pin: 
+      number: D3
+      inverted: yes
+
+  - platform: gpio
+    name: "Switch 4"
+    pin: 
+      number: D4
+      inverted: yes
+
+  - platform: gpio
+    name: "switch 5"
+    pin: 
+      number: D5
+      inverted: yes
+      
+  - platform: gpio
+    name: "switch 6"
+    pin: 
+      number: D6
+      inverted: yes      
+    
+  - platform: gpio
+    name: "switch 7"
+    pin:
+      number: D7
+      inverted: yes
+    
+  - platform: gpio
+    name: "switch 8"
+    pin: 
+      number: D8
+      inverted: yes
+      
