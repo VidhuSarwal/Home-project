@@ -22,7 +22,7 @@ const int out8 = 47;
       
 
 // variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+int buttonState = 0;         
 
 void setup() {
   // initialize the Input pin as an input:
@@ -34,7 +34,7 @@ void setup() {
            pinMode(Input6, INPUT);
              pinMode(Input7, INPUT);
                pinMode(Input8, INPUT);
-  // initialize the pushbutton pin as an input:
+  // initialize the output pin as an output:
   pinMode(out1, OUTPUT);
     pinMode(out2, OUTPUT);
       pinMode(out3, OUTPUT);
