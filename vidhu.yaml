@@ -14,9 +14,9 @@ ota:
   password: ""
 
 wifi:
-  ssid: "TP-Link_8046"
-  password: "34627297"
-  use_address: "192.168.0.20"
+  ssid: ""
+  password: ""
+  use_address: ""
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Vidhus-Room Fallback Hotspot"
